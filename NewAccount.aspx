@@ -25,14 +25,14 @@
                 <td class="auto-style2">First Name:</td>
                 <td>
                     <asp:TextBox ID="FirstName" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ErrorMessage="Required Field" ControlToValidate="FirstName" runat="server" />
+                    <asp:RequiredFieldValidator ErrorMessage="Required Field" ControlToValidate="FirstName" ForeColor="Red" runat="server" />
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">Last Name:</td>
                 <td>
                     <asp:TextBox ID="LastName" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ErrorMessage="Required Field" ControlToValidate="LastName" runat="server" />
+                    <asp:RequiredFieldValidator ErrorMessage="Required Field" ControlToValidate="LastName" ForeColor="Red" runat="server" />
                 </td>
             </tr>
             <tr>
@@ -40,14 +40,14 @@
                 <td>
                     <asp:TextBox ID="EmailAddress" runat="server"></asp:TextBox>
               
-                    <asp:RequiredFieldValidator ID="EmailVal" ErrorMessage="RequiredField" ControlToValidate="EmailAddress" runat="server" />
+                    <asp:RequiredFieldValidator ID="EmailVal" ErrorMessage="RequiredField" ControlToValidate="EmailAddress" ForeColor="Red" runat="server" />
               
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">Program Options</td>
                 <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="ProgramOptions_SelectedIndexChanged">
+                    <asp:DropDownList ID="ProgramOptions" runat="server" OnSelectedIndexChanged="ProgramOptions_SelectedIndexChanged">
                         <asp:ListItem>Web Developer Degree</asp:ListItem>
                         <asp:ListItem>ETSP Degree</asp:ListItem>
                         <asp:ListItem>Network Technology Degree</asp:ListItem>

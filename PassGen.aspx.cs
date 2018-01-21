@@ -13,7 +13,7 @@ namespace Assignment1
         {
             if (Session["FirstName"] != null) { 
                 FirstName.Visible = true;
-                FirstName.Text = Session["FirstName"].ToString()+",";
+                FirstName.Text = Session["FirstName"].ToString()+"";
             }
             if (Session["LastName"] != null)
             {

@@ -28,19 +28,23 @@
             <tr>
                 <td class="auto-style2">Last Name:</td>
                 <td>
-                    <asp:TextBox ID="LastName" runat="server" ></asp:TextBox>
+                    <asp:TextBox ID="LastName" runat="server"  ></asp:TextBox>
+                    <asp:RequiredFieldValidator ErrorMessage="RequiredField" ControlToValidate="LastName" ForeColor="Red"  runat="server" />
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">Birth Year:</td>
                 <td>
-                    <asp:TextBox ID="BirthYear" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="BirthYear" runat="server" ></asp:TextBox>
+                    <asp:RequiredFieldValidator ErrorMessage="RequiredField" ControlToValidate="BirthYear" ForeColor="Red" runat="server" />
+                    <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="InvalidYear" ControlToValidate="BirthYear" ForeColor="Red"  MinimumValue="1111" MaximumValue="9999" Type="Integer" ></asp:RangeValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">Favorite Color:</td>
                 <td>
                     <asp:TextBox ID="FavCol" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ErrorMessage="RequiredField" ControlToValidate="FavCol" ForeColor="Red" runat="server" />
                 </td>
             </tr>
             <tr>

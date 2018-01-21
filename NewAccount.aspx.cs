@@ -30,6 +30,8 @@ namespace Assignment1
             Session["FirstName"] = FirstName.Text;
             Session["LastName"] = LastName.Text;
             Session["EmailAddress"] = EmailAddress.Text;
+            Session["ProgramOptions"] = ProgramOptions.Text;
+            Session["ProgramUpdate"] = ProgramUpdate.Text;
             Response.Redirect("PassGen.aspx");
             
            
