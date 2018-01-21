@@ -22,7 +22,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">Having a hard time thinking up a unique and memorable password? Enter the information below to automatically generate possible passwords.</td>
+                <td class="auto-style2"><asp:TextBox  id="FirstName" runat="server" BorderStyle="None" Visible="False" Width="74px"></asp:TextBox>Having a hard time thinking up a unique and memorable password? Enter the information below to automatically generate possible passwords.</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>

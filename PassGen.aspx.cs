@@ -11,6 +11,10 @@ namespace Assignment1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["FirstName"] != null) { 
+                FirstName.Visible = true;
+                FirstName.Text = Session["FirstName"].ToString()+",";
+            }
             if (Session["LastName"] != null)
             {
                 LastName.Text = Session["LastName"].ToString();

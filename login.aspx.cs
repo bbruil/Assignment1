@@ -17,7 +17,11 @@ namespace Assignment1
 
         protected void Login_Click(object sender, EventArgs e)
         {
-            if (UserName.Text=="Ian" && Password.Text=="password")
+            if (UserName.Text=="Ian" && Password.Text=="password") 
+            {
+                Server.Transfer("Welcome.html");
+            }else 
+                if (UserName.Text == "ian" && Password.Text == "password")
             {
                 Server.Transfer("Welcome.html");
             }
